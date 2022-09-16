@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 30px;
 }
 header img:hover {
     transform: scale(1.5);
@@ -38,7 +38,7 @@ header img:hover {
 
 header img {
     border-radius: 50%;
-    width: 150px;
+    width: 120px;
     padding: 6px;
     background: linear-gradient(360deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
     cursor: pointer;
@@ -57,14 +57,13 @@ section {
    color: white;
    padding-top: 6px;
    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
-   border-radius: 13px;
-   
+   border-radius: 13px; 
 }
 section div {
     background-color: #2A2634;
     border-radius: 6px;
     padding: 24px 32px 32px 32px;
-    /* width: 580px; */
+    width: 580px; 
 }
 
 section h2 {
