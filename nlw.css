@@ -1,0 +1,169 @@
+/* body {
+    background-image: url(./imagem/Fundo.jpg);
+    background-position: top center;
+    background-size: 100% 100%;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(./imagem/Fundo.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+    padding-bottom: 60px;
+}
+
+body * {
+    font-family:'Inter', sans-serif;
+    line-height: 160%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+header img:hover {
+    transform: scale(1.5);
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    padding: 6px;
+    background: linear-gradient(360deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 24px;
+}
+
+section {
+   color: white;
+   padding-top: 6px;
+   background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+   border-radius: 13px;
+   
+}
+section div {
+    background-color: #2A2634;
+    border-radius: 6px;
+    padding: 24px 32px 32px 32px;
+    /* width: 580px; */
+}
+
+section h2 {
+    font-weight: 900;
+    letter-spacing: -0,47px;
+}
+
+section p {
+letter-spacing: -0.18px;
+color: #A1A1AA;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+ul li:hover {
+    transform: scale(1.5);
+}
+ul li {
+    transition: transform 0.4s;
+}
+
+.games-list img {
+    border-radius: 8px;
+    width: 90px;
+}
+
+.channel-list img {
+    width: 70px;
+    border: 1px solid #443E54;
+    border-radius: 999px;
+}
+
+.social-list img{
+    width: 33px;
+    height: 32px;
+}
+
+/* animation */
+
+header img {
+    animation: fromTop 1s .5s backwards;
+}
+
+@keyframes fromTop {
+    from { 
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.games {
+    animation: esqTop 1.5s 1s backwards;
+}
+@keyframes esqTop {
+    from { 
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.canal {
+    animation: dirTop 1.5s 1.5s backwards;
+}
+
+@keyframes dirTop {
+    from { 
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.social {
+    animation: Top 1.5s 2s backwards;
+}
+
+@keyframes Top {
+    from { 
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
